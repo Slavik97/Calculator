@@ -63,7 +63,25 @@ public class Interface {
 
         chisla[3][0].setSize(65,50);
         chisla[3][0].setText("" + numbers[0][3]);
+        chisla[3][0].addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                tf.setText(chisla[3][0].getText());
+            }
+        });
 
+        chisla[0][1].setText("" + numbers[1][0]);
+        chisla[1][1].setText("" + numbers[1][1]);
+        chisla[2][1].setText("" + numbers[1][2]);
+//        chisla[3][1].setText("" + numbers[1][3]);
+
+        chisla[0][2].setText("" + numbers[2][0]);
+        chisla[1][2].setText("" + numbers[2][1]);
+        chisla[2][2].setText("" + numbers[2][2]);
+
+        chisla[0][3].setText("" + numbers[3][0]);
+        chisla[1][3].setText("" + numbers[3][1]);
+        chisla[2][3].setText("" + numbers[3][2]);
     }
 
     public void procent(float a, float b){
